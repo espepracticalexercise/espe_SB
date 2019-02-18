@@ -1,27 +1,28 @@
 # Spring Boot Back-End
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
+This project was generated with Gradle version 5.2.1.
 
-## Development server
+## Ejecutar el siguiente Scritp en la db postgresql 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+CREATE DATABASE crudapp;
 
-## Code scaffolding
+CREATE TABLE flightreserva
+(
+  id int NOT NULL,
+  firstname character varying(255),
+  lastname character varying(255),
+  flightplace character varying(255),
+  flightdate character varying(255),
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  status character varying (255) DEFAULT 'New'
+  updatedAt TIMESTAMP,	 	  
+  CONSTRAINT flireserva_pkey PRIMARY KEY (id)
+);
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Agregar la credenciales de la DB postgresl
 
-## Build
+![Algorithm schema](./img/1.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Running
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Ejectar el proyecto
