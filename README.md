@@ -25,4 +25,10 @@ CREATE TABLE flightreserva
 
 ## Running
 
-Ejectar el proyecto
+Ejecutar el proyecto
+
+![Algorithm schema](./img/2.png)
+
+## Prueba
+
+![Algorithm schema](./img/3.png)
